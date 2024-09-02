@@ -93,7 +93,7 @@
 # IMAGE_CLASSES += "qemuboot"
 # See "runqemu help" for more info
 
-QB_MEM ?= "-m 256"
+QB_MEM ?= "-m 2048"
 QB_SMP ?= ""
 QB_SERIAL_OPT ?= "-serial mon:stdio -serial null"
 QB_DEFAULT_KERNEL ?= "${@bb.utils.contains("INITRAMFS_IMAGE_BUNDLE", "1", "${KERNEL_IMAGETYPE}-${INITRAMFS_LINK_NAME}.bin", "${KERNEL_IMAGETYPE}", d)}"
