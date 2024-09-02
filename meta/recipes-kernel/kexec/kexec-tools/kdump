@@ -125,7 +125,9 @@ case "$1" in
   start)
 	if [ -s /proc/vmcore ]; then
 		do_save_vmcore
-		reboot
+		# disable reboot in order to debug issues with makedumpfile
+		echo "kdump would reboot now"
+		#reboot
 	else
 		do_start
 	fi
