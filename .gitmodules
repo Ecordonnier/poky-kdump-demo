@@ -1,0 +1,6 @@
+[submodule "meta-oss-demo"]
+	path = meta-oss-demo
+	url = ./meta-oss-demo/
+[submodule "meta-openembedded"]
+	path = meta-openembedded
+	url = ./meta-openembedded/
